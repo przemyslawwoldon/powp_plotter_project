@@ -56,7 +56,8 @@ public class TestPlotSoftPatterns
 	 */
 	private static void setupDefaultDrawerVisibilityManagement(Context context) {
 		DefaultDrawerFrame defaultDrawerWindow = DefaultDrawerFrame.getDefaultDrawerFrame();
-        context.addComponentMenuElementWithCheckBox(DrawPanelController.class, "Default Drawer Visibility", 
+		
+		context.addComponentMenuElementWithCheckBox(DrawPanelController.class, "Default Drawer Visibility", 
         		new SelectChangeVisibleOptionListener(defaultDrawerWindow), true);
         defaultDrawerWindow.setVisible(true);
 	}
@@ -88,7 +89,7 @@ public class TestPlotSoftPatterns
             {
                 ApplicationWithDrawer.configureApplication();
                 Context context = Application.getComponent(Context.class);
-                
+
                 setupDefaultDrawerVisibilityManagement(context);
                 
             	setupDrivers(context);

@@ -42,7 +42,7 @@ public class ApplicationWithDrawer {
 	 */
 	private static void setupDrawerPlugin(Context context) {    
 		SelectClearPanelOptionListener selectClearPanelOptionListener = new SelectClearPanelOptionListener();
-	
+
 		Application.addComponent(DrawPanelController.class);
 		context.addComponentMenu(DrawPanelController.class, "Draw Panel", 0);
 		context.addComponentMenuElement(DrawPanelController.class, "Clear Panel", selectClearPanelOptionListener);
@@ -58,5 +58,5 @@ public class ApplicationWithDrawer {
 	public static DrawPanelController getDrawPanelController() {
 		return Application.getComponent(DrawPanelController.class);
 	}
-
+	
 }
