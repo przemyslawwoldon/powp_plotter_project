@@ -50,3 +50,8 @@ public class PlotterAdapter implements IPlotter
         return "PlotterAdapter";
     }
 }
+
+//Wzorzec projektowy adapter, jest uzyteczny,
+//gdy mamy klasy ktorych interfejsy nie sa kompatybilne (IPlotter, DrawPanelController), 
+//dodatkowo jeśli nie mamy kontroli nad kodem zrodlowym lub jego refaktoryzacja okazalaby sie zbyt kosztowna.
+//Dostarczamy interfejs ktory oczekuje klient (w TestPlotSoftPatterns), porzez opakowanie istniejacego interfejsu.
