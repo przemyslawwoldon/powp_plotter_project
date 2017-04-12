@@ -15,11 +15,9 @@ public class PlotterAdapter implements IPlotter
 	private DrawPanelController drawPanelController;
 	
     public PlotterAdapter() {
-		super();
 	}
     
     public PlotterAdapter(DrawPanelController drawPanelController) {
-		super();
 		this.drawPanelController = drawPanelController;
 	}
     
@@ -43,6 +41,6 @@ public class PlotterAdapter implements IPlotter
     @Override
     public String toString()
     {
-        return "@Q!$!@$!#@$(*#@&Q(%^*#@";
+        return "PlotterAdapter";
     }
 }
