@@ -23,8 +23,6 @@ public class PlotterAdapter implements IPlotter
 		this.drawPanelController = drawPanelController;
 	}
     
-    
-    
 	@Override
     public void setPosition(int x, int y)
     {
