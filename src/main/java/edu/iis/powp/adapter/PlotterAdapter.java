@@ -23,6 +23,10 @@ public class PlotterAdapter implements IPlotter
 		this.lineType = lineType;
 	}
     
+    public PlotterAdapter(DrawPanelController drawPanelController) {
+		this.drawPanelController = drawPanelController;
+	}
+    
 	@Override
     public void setPosition(int x, int y)
     {
