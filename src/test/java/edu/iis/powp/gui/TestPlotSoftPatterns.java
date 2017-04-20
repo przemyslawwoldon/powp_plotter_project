@@ -107,6 +107,24 @@ public class TestPlotSoftPatterns
 		});
 	}
 	
+	
+	private static void setFigure(Context context) {
+		Application.addComponent(LineType.class);
+		context.addComponentMenu(LineType.class, "Figure");
+		context.addComponentMenuElement(LineType.class, "Square", (ActionEvent e) -> {
+
+		});
+		
+		context.addComponentMenuElement(LineType.class, "Triangle", (ActionEvent e) -> {
+
+		});
+		
+		context.addComponentMenuElement(LineType.class, "Rectangle ", (ActionEvent e) -> {
+
+		});
+	}
+	
+	
     /**
      * Launch the application.
      */
