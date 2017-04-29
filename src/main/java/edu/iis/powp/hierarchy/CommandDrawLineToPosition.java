@@ -11,14 +11,6 @@ public class CommandDrawLineToPosition implements PlotterCommand{
 		this.x = x;
 		this.y = y;
 	}
-	
-	public int setX() {
-		return x;
-	}
-
-	public int setY() {
-		return y;
-	}
 
 	@Override
 	public void execute(IPlotter iPlotter) {

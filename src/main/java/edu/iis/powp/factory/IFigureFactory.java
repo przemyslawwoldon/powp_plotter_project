@@ -1,9 +1,11 @@
 package edu.iis.powp.factory;
 
+import edu.iis.powp.hierarchy.ComplexCommand;
+
 public interface IFigureFactory {
 
-	public Square getSquare();
+	public ComplexCommand getSquare();
 	
-	public Circle getCircle();
+	public ComplexCommand getTriangle();
 	
 }
