@@ -12,7 +12,6 @@ public class SelectTestFigureOptionComplexCommand implements ActionListener{
 	private PlotterCommand plotterCommand;
 	
 	public SelectTestFigureOptionComplexCommand(PlotterCommand plotterCommand) {
-		super();
 		this.plotterCommand = plotterCommand;
 	}
 
